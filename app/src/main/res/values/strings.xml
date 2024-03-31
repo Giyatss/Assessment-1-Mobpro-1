@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Mobpro1_assessment1</string>
+    <string name="app_name">Rekomenedasi Mobil</string>
+    <string name="app_intro">Kami akan membantu mencarikan rekomendasi mobil untukmu.\n\nMasukkan merek mobil:</string>
+    <string name="pilih_tipe">Pilih tipe mobil:</string>
+    <string name="merek_mobil">Merek (Toyota atau Daihatsu)</string>
+    <string name="mobil_manual">Manual</string>
+    <string name="mobil_matic">Matic</string>
+    <string name="lihat_rekomendasi">Lihat Rekomendasi</string>
+
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="copyright">Aplikasi ini dibuat untuk memudahkan pengguna yang sedang mencari
+        rekomendasi mobil. Aplikasi akan menampilkan beberapa rekomendasi mobil yang relevan merdasarkan
+        inputan merek dan tipe mobil (manual atau matic) yang telah dimasukkan oleh
+        pengguna.\n\nCopyright © 2024 Giyats Almanfalutti.\nAll rights reserved.</string>
+
+    <string name="kembali">Kembali</string>
+
 </resources>
