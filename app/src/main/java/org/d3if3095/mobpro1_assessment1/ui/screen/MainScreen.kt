@@ -93,7 +93,6 @@ fun ScreenContent(modifier: Modifier) {
         stringResource(id = R.string.mobil_manual),
         stringResource(id = R.string.mobil_matic)
     )
-    val context = LocalContext.current
 
     Column (
         modifier = modifier
@@ -108,7 +107,6 @@ fun ScreenContent(modifier: Modifier) {
             modifier = Modifier.fillMaxWidth()
         )
 
-        // OutlinedTextField for the merek
         OutlinedTextField(
             value = merek,
             onValueChange = { value ->
@@ -123,7 +121,7 @@ fun ScreenContent(modifier: Modifier) {
                 .fillMaxWidth()
                 .padding(top = 20.dp))
 
-        // Radio buttons for tipe mobil
+
         Row(
             modifier = Modifier
                 .padding(top = 6.dp)
@@ -149,17 +147,14 @@ fun ScreenContent(modifier: Modifier) {
             }
         }
 
-        // Button to show recommendations
         Button(
             onClick = {
-                // Reset input validation
+
                 isInputValid = true
 
-                // Validate input
                 if (merek.isEmpty() || tipe.isEmpty()) {
                     isInputValid = false
                 } else {
-                    // Show recommendations based on input
                     Rekomendasi1 = (merek.lowercase() == "toyota" && tipe.lowercase() == "matic")
                     Rekomendasi2 = (merek.lowercase() == "toyota" && tipe.lowercase() == "manual")
                     Rekomendasi3 = (merek.lowercase() == "daihatsu" && tipe.lowercase() == "matic")
@@ -171,7 +166,6 @@ fun ScreenContent(modifier: Modifier) {
             Text(text = stringResource(R.string.lihat_rekomendasi))
         }
 
-        // Show input validation message if input is not valid
         if (!isInputValid) {
             Text(
                 text = "Input tidak valid, mohon isi kedua inputan.",
@@ -181,7 +175,6 @@ fun ScreenContent(modifier: Modifier) {
             )
         }
 
-        // Recommendations section
         if (Rekomendasi1) {
             ToyotaMatic()
         }
@@ -194,7 +187,6 @@ fun ScreenContent(modifier: Modifier) {
         if (Rekomendasi4){
             DaihatsuManual()
         }
-
 
     }
 }
