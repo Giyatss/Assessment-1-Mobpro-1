@@ -1,6 +1,7 @@
 package org.d3if3095.mobpro1_assessment1.ui.screen
 
 import android.content.res.Configuration
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -26,6 +27,8 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.style.TextAlign
@@ -139,6 +142,12 @@ fun ScreenContent(modifier: Modifier) {
         // Button to show recommendations
         Button(
             onClick = {
+
+                Rekomendasi1 = false
+                Rekomendasi2 = false
+                Rekomendasi3 = false
+                Rekomendasi4 = false
+
                 if (merek.lowercase() == "toyota" && tipe.lowercase() == "matic") {
                     Rekomendasi1 = true
                 }
@@ -177,48 +186,90 @@ fun ScreenContent(modifier: Modifier) {
 @Composable
 fun ToyotaMatic() {
     Column(
-        modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp)
+        modifier = Modifier.fillMaxWidth().padding(vertical = 50.dp)
     ) {
         Text(text = stringResource(id = R.string.toyota_matic),
             textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth())
-        Text(text = stringResource(id = R.string.isi_toyota_matic))
+            modifier = Modifier.fillMaxWidth()
+        )
+        Image(
+            painter = painterResource(id = R.drawable.toyota),
+            contentDescription = null,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(210.dp),
+            contentScale = ContentScale.Fit
+        )
+        Text(text = stringResource(id = R.string.isi_toyota_matic),
+            modifier = Modifier.padding(top = 40.dp))
     }
 }
 
 @Composable
 fun ToyotaManual() {
     Column(
-        modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp)
+        modifier = Modifier.fillMaxWidth().padding(vertical = 50.dp)
     ) {
         Text(text = stringResource(id = R.string.toyota_manual),
             textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth())
-        Text(text = stringResource(id = R.string.isi_toyota_manual))
+            modifier = Modifier.fillMaxWidth()
+        )
+        Image(
+            painter = painterResource(id = R.drawable.toyota),
+            contentDescription = null,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(210.dp),
+            contentScale = ContentScale.Fit
+        )
+        Text(text = stringResource(id = R.string.isi_toyota_manual),
+            modifier = Modifier.padding(top = 40.dp))
     }
 }
 
 @Composable
 fun DaihatsuMatic() {
     Column(
-        modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp)
+        modifier = Modifier.fillMaxWidth().padding(vertical = 50.dp)
     ) {
         Text(text = stringResource(id = R.string.daihatsu_matic),
             textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth())
-        Text(text = stringResource(id = R.string.isi_daihatsu_matic))
+            modifier = Modifier.fillMaxWidth()
+        )
+        Image(
+            painter = painterResource(id = R.drawable.daihatsu),
+            contentDescription = null,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(210.dp)
+                .padding(20.dp),
+            contentScale = ContentScale.Fit
+        )
+        Text(text = stringResource(id = R.string.isi_daihatsu_matic),
+            modifier = Modifier.padding(top = 40.dp))
     }
 }
 
 @Composable
 fun DaihatsuManual() {
     Column(
-        modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp)
+        modifier = Modifier.fillMaxWidth().padding(vertical = 50.dp)
     ) {
         Text(text = stringResource(id = R.string.daihatsu_manual),
             textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth())
-        Text(text = stringResource(id = R.string.isi_daihatsu_manual))
+            modifier = Modifier.fillMaxWidth()
+        )
+        Image(
+            painter = painterResource(id = R.drawable.daihatsu),
+            contentDescription = null,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(210.dp)
+                .padding(20.dp),
+            contentScale = ContentScale.Fit
+        )
+        Text(text = stringResource(id = R.string.isi_daihatsu_manual),
+            modifier = Modifier.padding(top = 40.dp))
     }
 }
 
