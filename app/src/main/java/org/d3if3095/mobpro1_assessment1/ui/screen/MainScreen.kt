@@ -15,6 +15,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material3.Button
+import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -106,6 +107,11 @@ fun ScreenContent(modifier: Modifier) {
             text = stringResource(id = R.string.app_intro),
             modifier = Modifier.fillMaxWidth()
         )
+        Text(
+            text = stringResource(id = R.string.pilihan_merek),
+            modifier = Modifier.fillMaxWidth(),
+            style = MaterialTheme.typography.bodySmall
+        )
 
         OutlinedTextField(
             value = merek,
@@ -152,7 +158,9 @@ fun ScreenContent(modifier: Modifier) {
 
                 isInputValid = true
 
-                if (merek.isEmpty() || tipe.isEmpty()) {
+                if (merek.lowercase() != "toyota" && merek.lowercase() != "daihatsu") {
+                    isInputValid = false
+                }else if (merek.isEmpty() || tipe.isEmpty()) {
                     isInputValid = false
                 } else {
                     Rekomendasi1 = (merek.lowercase() == "toyota" && tipe.lowercase() == "matic")
@@ -160,31 +168,45 @@ fun ScreenContent(modifier: Modifier) {
                     Rekomendasi3 = (merek.lowercase() == "daihatsu" && tipe.lowercase() == "matic")
                     Rekomendasi4 = (merek.lowercase() == "daihatsu" && tipe.lowercase() == "manual")
                 }
+
+                if (!isInputValid) {
+                    Rekomendasi1 = false
+                    Rekomendasi2 = false
+                    Rekomendasi3 = false
+                    Rekomendasi4 = false
+                }
             },
             modifier = Modifier.padding(top = 20.dp)
         ) {
             Text(text = stringResource(R.string.lihat_rekomendasi))
         }
+        Text(text = stringResource(R.string.ket_rekomendasi),
+            style = MaterialTheme.typography.bodySmall)
 
         if (!isInputValid) {
+            Divider(Modifier.padding(vertical = 12.dp))
             Text(
-                text = "Input tidak valid, mohon isi kedua inputan.",
-                style = MaterialTheme.typography.bodyMedium,
+                text = stringResource(id = R.string.input_error),
+                style = MaterialTheme.typography.bodyLarge,
                 color = Color.Red,
                 modifier = Modifier.padding(top = 8.dp)
             )
         }
 
         if (Rekomendasi1) {
+            Divider(Modifier.padding(vertical = 12.dp))
             ToyotaMatic()
         }
         if (Rekomendasi2){
+            Divider(Modifier.padding(vertical = 12.dp))
             ToyotaManual()
         }
         if (Rekomendasi3) {
+            Divider(Modifier.padding(vertical = 12.dp))
             DaihatsuMatic()
         }
         if (Rekomendasi4){
+            Divider(Modifier.padding(vertical = 12.dp))
             DaihatsuManual()
         }
 
@@ -207,7 +229,7 @@ fun ToyotaMatic() {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(vertical = 50.dp)
+            .padding(vertical = 20.dp)
     ) {
         Text(text = stringResource(id = R.string.toyota_matic),
             textAlign = TextAlign.Center,
@@ -244,7 +266,7 @@ fun ToyotaManual() {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(vertical = 50.dp)
+            .padding(vertical = 20.dp)
     ) {
         Text(text = stringResource(id = R.string.toyota_manual),
             textAlign = TextAlign.Center,
@@ -281,7 +303,7 @@ fun DaihatsuMatic() {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(vertical = 50.dp)
+            .padding(vertical = 20.dp)
     ) {
         Text(text = stringResource(id = R.string.daihatsu_matic),
             textAlign = TextAlign.Center,
@@ -319,7 +341,7 @@ fun DaihatsuManual() {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(vertical = 50.dp)
+            .padding(vertical = 20.dp)
     ) {
         Text(text = stringResource(id = R.string.daihatsu_manual),
             textAlign = TextAlign.Center,

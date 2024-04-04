@@ -1,36 +1,78 @@
 <resources>
-    <string name="app_name">Rekomenedasi Mobil</string>
-    <string name="app_intro">Kami akan membantu mencarikan rekomendasi mobil untukmu.\n\nMasukkan merek mobil:</string>
-    <string name="pilih_tipe">Pilih tipe mobil:</string>
-    <string name="merek_mobil">Merek (Toyota atau Daihatsu)</string>
+    <string name="app_name">Car Recommendations</string>
+    <string name="app_intro">We will help find recommendations for your car.\n\nEnter the car brand:</string>
+    <string name="pilihan_merek">*brands only Toyota and Daihatsu</string>
+    <string name="pilih_tipe">Select car type:</string>
+    <string name="merek_mobil">Brand (Toyota or Daihatsu)</string>
     <string name="mobil_manual">Manual</string>
     <string name="mobil_matic">Matic</string>
-    <string name="lihat_rekomendasi">Lihat Rekomendasi</string>
+    <string name="lihat_rekomendasi">View Recommendations</string>
+    <string name="ket_rekomendasi">Recommendation results will appear below</string>
 
-    <string name="tentang_aplikasi">Tentang Aplikasi</string>
-    <string name="copyright">Aplikasi ini dibuat untuk memudahkan pengguna yang sedang mencari rekomendasi mobil. Aplikasi akan menampilkan beberapa rekomendasi mobil yang relevan merdasarkan inputan merek dan tipe mobil (manual atau matic) yang telah dimasukkan olehpengguna.\n\nCopyright © 2024 Giyats Almanfalutti.\nAll rights reserved.</string>
-
-    <string name="kembali">Kembali</string>
+    <string name="tentang_aplikasi">About Application</string>
+    <string name="copyright">This application was created to make it easier for users who are looking for car recommendations. The application will display several relevant
+        car recommendations based on the brand and type of car (manual or automatic) entered by the user.\n\nCopyright © 2024 Giyats Almanfalutti.\nAll rights reserved.</string>
+    <string name="kembali">Back</string>
     
-    <string name="toyota_matic">REKOMENDASI MOBIL TOYOTA MATIC\n</string>
-    <string name="isi_toyota_matic">1. Toyota Avanza\nToyota Avanza adalah mobil MPV (Multi-Purpose Vehicle) 7-seater yang terkenal dengan harga yang terjangkau, irit bahan bakar, dan kabin yang luas. Mobil ini cocok untuk keluarga yang ingin memiliki mobil dengan harga terjangkau, mampu menampung banyak penumpang, dan nyaman untuk perjalanan jauh.\nSpesifikasi:\nMesin: 1.3L 4 silinder dan 1.5L 4 silinder\nTenaga: 98 PS (1.3L) dan 106 PS (1.5L)\nTorsi: 12.4 Nm (1.3L) dan 14.1 Nm (1.5L)\nTransmisi: Manual 5-percepatan dan Otomatis CVT\nKonsumsi BBM: 13-15 km/liter (dalam kota) dan 16-18 km/liter (luar kota)\nFitur: AC, power window, power steering, audio system, ABS, airbag, electronic parking brake\n\n
-2. Toyota Kijang Innova\nToyota Kijang Innova adalah mobil MPV (Multi-Purpose Vehicle) 7-seater yang terkenal dengan desainnya yang elegan, performa yang handal, dan interior yang nyaman. Mobil ini cocok untuk keluarga yang ingin memiliki mobil dengan desain yang stylish, performa yang tangguh, dan kabin yang luas.\nSpesifikasi:\nMesin: 2.0L 4 silinder dan 2.4L 4 silinder\nTenaga: 139 PS (2.0L) dan 149 PS (2.4L)\nTorsi: 183 Nm (2.0L) dan 239 Nm (2.4L)\nTransmisi: Manual 5-percepatan dan Otomatis 6-percepatan\nKonsumsi BBM: 10-12 km/liter (dalam kota) dan 13-15 km/liter (luar kota)\nFitur: AC, power window, power steering, audio system, ABS, airbag, electronic parking brake, hill start assist, panoramic sunroof\n\n3. Toyota Fortuner\nToyota Fortuner adalah mobil SUV (Sport Utility Vehicle) 7-seater yang terkenal dengan desainnya yang gagah, performa yang handal, dan fitur yang lengkap. Mobil ini cocok untuk keluarga yang ingin memiliki mobil dengan desain yang stylish, performa yang tangguh, dan fitur yang canggih.\nSpesifikasi:\nMesin: 2.4L 4 silinder dan 2.8L 4 silinder\nTenaga: 149 PS (2.4L) dan 204 PS (2.8L)\nTorsi: 400 Nm (2.4L) dan 420 Nm (2.8L)\nTransmisi: Manual 6-percepatan dan Otomatis 6-percepatan\nKonsumsi BBM: 9-11 km/liter (dalam kota) dan 12-14 km/liter (luar kota)\nFitur: AC, power window, power steering, audio system, ABS, airbag, electronic parking brake, hill start assist, adaptive cruise control, lane departure warning, forward collision warning</string>
+    <string name="toyota_matic">TOYOTA MATIC CAR RECOMMENDATIONS\n</string>
+    <string name="isi_toyota_matic">1. Toyota Avanza\nThe Toyota Avanza is a 7-seater MPV (Multi-Purpose Vehicle) car which is famous for its affordable price, fuel economy
+        and spacious cabin. This car is suitable for families who want to have a car at an affordable price, able to accommodate many passengers, and comfortable for long
+        trips.\nSpecifications:\nEngine: 1.3L 4 cylinder and 1.5L 4 cylinder\nPower: 98 PS (1.3L) and 106 PS (1.5L)\nTorque: 12.4 Nm (1.3L) and 14.1 Nm (1.5L)\nTransmission:
+        5-speed manual and CVT automatic\nFuel consumption: 13-15 km/liter (in the city) and 16-18 km / liter (outside the city)\nFeatures: AC, power window, power
+        steering, audio system, ABS, airbag, electronic parking brake\n\n 2. Toyota Kijang Innova\nThe Toyota Kijang Innova is an MPV (Multi-Purpose Vehicle) 7 -seater which
+        is famous for its elegant design, reliable performance and comfortable interior. This car is suitable for families who want to have a car with a stylish design,
+        strong performance and a spacious cabin.\nSpecifications:\nEngine: 2.0L 4 cylinder and 2.4L 4 cylinder\nPower: 139 PS (2.0L) and 149 PS (2.4L)\nTorque: 183 Nm
+        (2.0L) and 239 Nm (2.4L)\nTransmission: 5-speed manual and 6-speed automatic\nFuel consumption: 10-12 km/liter (in the city) and 13-15 km/liter
+        (outside the city)\nFeatures: AC, power windows, power steering, audio system, ABS, airbags, electronic parking brake, hill start assist, panoramic sunroof\n\n 3.
+        Toyota Fortuner\nToyota Fortuner is an SUV ( Sport Utility Vehicle) 7-seater which is famous for its dashing design, reliable performance and complete features.
+        This car is suitable for families who want to have a car with a stylish design, strong performance and sophisticated features.\nSpecifications:\nEngine: 2.4L 4
+        cylinder and 2.8L 4 cylinder\nPower: 149 PS (2.4L) and 204 PS (2.8L)\nTorque: 400 Nm (2.4L) and 420 Nm (2.8L)\nTransmission: 6-speed manual and 6-speed automatic\nFuel
+        consumption: 9-11 km/liter (in city) and 12-14 km/liter (outside the city)\nFeatures: AC, power windows, power steering, audio system, ABS, airbags, electronic parking
+        brake, hill start assist, adaptive cruise control, lane departure warning, forward collision warning</string>
 
-    <string name="toyota_manual">REKOMENDASI MOBIL TOYOTA MANUAL\n</string>
-    <string name="isi_toyota_manual">1. Toyota Corolla\nToyota Corolla adalah mobil sedan yang terkenal dengan desainnya yang elegan, performa yang handal, dan interior yang nyaman. Mobil ini cocok untuk keluarga yang ingin memiliki mobil dengan desain yang stylish, performa yang tangguh, dan kabin yang luas.\nSpesifikasi:\nMesin: 1.8L 4 silinder\nTenaga: 140 PS\nTorsi: 171 Nm\nTransmisi: Manual 6-percepatan atau Otomatis CVT\nKonsumsi BBM: 12-14 km/liter (dalam kota) dan 15-17 km/liter (luar kota)\nFitur: AC, power window, power steering, audio system, ABS, airbag, electronic parking brake, hill start assist\n\n
-2. Toyota Yaris\nToyota Yaris adalah mobil hatchback yang terkenal dengan desainnya yang sporty, performa yang handal, dan fitur yang lengkap. Mobil ini cocok untuk pengendara yang ingin memiliki mobil dengan desain kekinian, performa yang tangguh, dan fitur yang canggih.\nSpesifikasi:\nMesin: 1.5L 4 silinder\nTenaga: 107 PS\nTorsi: 140 Nm\nTransmisi: Manual 5-percepatan atau Otomatis CVT\nKonsumsi BBM: 13-15 km/liter (dalam kota) dan 16-18 km/liter (luar kota)\nFitur: AC, power window, power steering, audio system, ABS, airbag, electronic parking brake, hill start assist, paddle shift\n\n
-3. Toyota Rush\nToyota Rush adalah mobil SUV (Sport Utility Vehicle) 7-seater yang terkenal dengan desainnya yang sporty, performa yang handal, dan kabin yang luas. Mobil ini cocok untuk keluarga yang ingin memiliki mobil dengan desain yang stylish, performa yang tangguh, dan kabin yang mampu menampung banyak penumpang.\nSpesifikasi:\nMesin: 1.5L 4 silinder\nTenaga: 104 PS\nTorsi: 138 Nm\nTransmisi: Manual 5-percepatan atau Otomatis 4-percepatan\nKonsumsi BBM: 10-12 km/liter (dalam kota) dan 13-15 km/liter (luar kota)\nFitur: AC, power window, power steering, audio system, ABS, airbag, electronic parking brake, hill start assist</string>
+    <string name="toyota_manual">TOYOTA MANUAL CAR RECOMMENDATIONS\n</string>
+    <string name="isi_toyota_manual">1. Toyota Corolla\nThe Toyota Corolla is a sedan that is famous for its elegant design, reliable performance and comfortable interior. This
+        car is suitable for families who want to have a car with a stylish design, strong performance and a spacious cabin.\nSpecifications:\nEngine: 1.8L 4 cylinder\nPower:
+        140 PS\nTorque: 171 Nm\nTransmission: 6-speed manual or Automatic CVT\nFuel consumption: 12-14 km/liter (in city) and 15-17 km/liter (outside city)\nFeatures: AC,
+        power windows, power steering, audio system, ABS, airbags, electronic parking brake, hill start assist\n\n 2. Toyota Yaris\nThe Toyota Yaris is a hatchback car that is
+        famous for its sporty design, reliable performance and complete features. This car is suitable for drivers who want to have a car with a contemporary design, strong
+        performance and sophisticated features.\nSpecifications:\nEngine: 1.5L 4 cylinder\nPower: 107 PS\nTorque: 140 Nm\nTransmission: 5-speed manual or Automatic CVT\nFuel
+        consumption: 13-15 km/liter (in city) and 16-18 km/liter (outside city)\nFeatures: AC, power window, power steering, audio system, ABS, airbag, electronic parking brake,
+        hill start assist, paddle shift\n\n 3. Toyota Rush\nToyota Rush is a 7-seater SUV (Sport Utility Vehicle) which is famous for its sporty design, reliable performance
+        and spacious cabin. This car is suitable for families who want to have a car with a stylish design, strong performance, and a cabin that can accommodate many passengers.
+        \nSpecifications:\nEngine: 1.5L 4 cylinder\nPower: 104 PS\nTorque: 138 Nm\nTransmission: Manual 5-speed or 4-speed automatic\nFuel consumption: 10-12 km/liter
+        (in the city) and 13-15 km/liter (outside the city)\nFeatures: AC, power windows, power steering, audio system, ABS, airbags , electronic parking brake, hill start
+        assist</string>
 
-    <string name="daihatsu_matic">REKOMNEDASI MOBIL DAIHATSU MATIC\n</string>
-    <string name="isi_daihatsu_matic">1. Daihatsu Ayla Type D AT\nDaihatsu Ayla Type D AT adalah mobil LCGC (Low Cost Green Car) 5-seater yang terkenal dengan harga yang murah, irit bahan bakar, dan transmisi matic yang memudahkan pengemudi. Mobil ini cocok untuk pengendara yang ingin memiliki mobil dengan harga terjangkau, mudah dikendarai, dan nyaman di jalanan padat.\nSpesifikasi:\nMesin: 1.0L 3 silinder\nTenaga: 65 PS\nTorsi: 86 Nm\nTransmisi: Otomatis 4-percepatan\nKonsumsi BBM: 14-16 km/liter (dalam kota) dan 17-19 km/liter (luar kota)\nFitur: AC, power window, power steering, audio system, ABS, airbag\n\n
-2. Daihatsu Sigra\nDaihatsu Sigra adalah mobil MPV (Multi-Purpose Vehicle) 7-seater yang terkenal dengan harga yang terjangkau, irit bahan bakar, dan kabin yang luas. Mobil ini cocok untuk keluarga yang ingin memiliki mobil dengan harga terjangkau, mampu menampung banyak penumpang, dan nyaman untuk perjalanan jauh.\nSpesifikasi:\nMesin: 1.0L 3 silinder (D dan M) / 1.2L 4 silinder (X dan R)\nTenaga: 67 PS (1.0L) / 88 PS (1.2L)\nTorsi: 89 Nm (1.0L) / 108 Nm (1.2L)\nTransmisi: Manual 5-percepatan atau Otomatis 4-percepatan\nKonsumsi BBM: 13-15 km/liter (dalam kota) dan 16-18 km/liter (luar kota)\nFitur: AC, power window, power steering, audio system, ABS, airbag\n\n
-3. Daihatsu Rocky\nDaihatsu Rocky adalah mobil SUV (Sport Utility Vehicle) 5-seater yang terkenal dengan desainnya yang stylish, performa yang handal, dan fitur yang lengkap. Mobil ini cocok untuk pengendara yang ingin memiliki mobil dengan desain kekinian, performa yang tangguh, dan fitur yang canggih.\nSpesifikasi:\nMesin: 1.0L 3 silinder Turbo (1.0R) / 1.2L 4 silinder (1.2R)\nTenaga: 98 PS (1.0L) / 88 PS (1.2L)\nTorsi: 140 Nm (1.0L) / 113 Nm (1.2L)\nTransmisi: Manual 5-percepatan atau Otomatis CVT\nKonsumsi BBM: 16-18 km/liter (dalam kota) dan 19-21 km/liter (luar kota)\nFitur: AC, power window, power steering, audio system, ABS, airbag, electronic parking brake, hill start assist, adaptive cruise control, lane departure warning, forward collision warning</string>
+    <string name="daihatsu_matic">DAIHATSU MATIC CAR RECOMMENDATIONS\n</string>
+    <string name="isi_daihatsu_matic">1. Daihatsu Ayla Type D AT\nDaihatsu Ayla Type D AT is a 5-seater LCGC (Low Cost Green Car) car which is famous for its low price, fuel
+        economy and automatic transmission which makes it easier for drivers. This car is suitable for drivers who want to have a car that is affordable, easy to drive and
+        comfortable on busy roads.\nSpecifications:\nEngine: 1.0L 3 cylinder\nPower: 65 PS\nTorque: 86 Nm\nTransmission: 4-speed automatic\n nFuel consumption: 14-16 km/liter
+        (in city) and 17-19 km/liter (outside city)\nFeatures: AC, power windows, power steering, audio system, ABS, airbags\n\n 2. Daihatsu Sigra\nDaihatsu Sigra is a 7-seater
+        MPV (Multi-Purpose Vehicle) car which is famous for its affordable price, fuel economy and spacious cabin. This car is suitable for families who want to have a car at
+        an affordable price, able to accommodate many passengers, and comfortable for long trips.\nSpecifications:\nEngine: 1.0L 3 cylinders (D and M) / 1.2L 4 cylinders
+        (X and R)\\ nPower: 67 PS (1.0L) / 88 PS (1.2L)\nTorque: 89 Nm (1.0L) / 108 Nm (1.2L)\nTransmission: 5-speed manual or 4-speed automatic\nFuel consumption: 13-15
+        km/liter (in city) and 16-18 km/liter (outside city)\nFeatures: AC, power window, power steering, audio system, ABS, airbag\n\n 3. Daihatsu Rocky\nDaihatsu Rocky is
+        an SUV ( Sport Utility Vehicle) 5-seater which is famous for its stylish design, reliable performance and complete features. This car is suitable for drivers who want
+        to have a car with a contemporary design, strong performance and sophisticated features.\nSpecifications:\nEngine: 1.0L 3 cylinder Turbo (1.0R) / 1.2L 4 cylinder
+        (1.2R)\nPower: 98 PS (1.0L) / 88 PS (1.2L)\nTorque: 140 Nm (1.0L) / 113 Nm (1.2L)\nTransmission: 5-speed manual or CVT automatic\nFuel consumption: 16-18 km/liter
+        (in city) and 19-21 km/liter (outside the city)\nFeatures: AC, power windows, power steering, audio system, ABS, airbags, electronic parking brake, hill start assist,
+        adaptive cruise control, lane departure warning, forward collision warning</string>
 
-    <string name="daihatsu_manual">REKOMENDASI MOBIL DAIHATSU MANUAL\n</string>
-    <string name="isi_daihatsu_manual">1. Daihatsu Xenia\nDaihatsu Xenia adalah mobil MPV (Multi-Purpose Vehicle) 7-seater yang terkenal dengan harga yang terjangkau dan irit bahan bakar. Mobil ini cocok untuk keluarga yang ingin memiliki mobil dengan kabin yang luas dan nyaman.\nSpesifikasi:\nMesin: 1.3L 4 silinder\nTenaga: 97 PS\nTorsi: 120 Nm\nTransmisi: Manual 5-percepatan atau Otomatis 4-percepatan\nKonsumsi BBM: 13-15 km/liter (dalam kota) dan 16-18 km/liter (luar kota)\nFitur: AC, power window, power steering, audio system, ABS, airbag\n\n
-2. Daihatsu Terios\nDaihatsu Terios adalah mobil SUV (Sport Utility Vehicle) 7-seater yang memiliki desain sporty dan tangguh. Mobil ini cocok untuk keluarga yang ingin memiliki mobil dengan performa yang handal dan mampu melewati berbagai medan jalan.\nSpesifikasi:\nMesin: 1.5L 4 silinder\nTenaga: 103 PS\nTorsi: 136 Nm\nTransmisi: Manual 5-percepatan atau Otomatis 4-percepatan\nKonsumsi BBM: 10-12 km/liter (dalam kota) dan 13-15 km/liter (luar kota)\nFitur: AC, power window, power steering, audio system, ABS, airbag, electronic parking brake, hill start assist\n\n
-3. Daihatsu Ayla Type D MT\nDaihatsu Ayla Type D MT adalah mobil LCGC (Low Cost Green Car) 5-seater yang terkenal dengan harga yang murah dan irit bahan bakar. Mobil ini cocok untuk pengendara yang ingin memiliki mobil dengan harga terjangkau dan mudah dikendarai.\nSpesifikasi:\nMesin: 1.0L 3 silinder\nTenaga: 65 PS\nTorsi: 86 Nm\nTransmisi: Manual 5-percepatan\nKonsumsi BBM: 15-17 km/liter (dalam kota) dan 18-20 km/liter (luar kota)\nFitur: AC, power window, power steering, audio system</string>
+    <string name="daihatsu_manual">DAIHATSU MANUAL CAR RECOMMENDATIONS\n</string>
+    <string name="isi_daihatsu_manual">1. Daihatsu Xenia\nDaihatsu This car is suitable for families who want to have a car with a spacious and comfortable cabin.\nSpecifications:\nEngine:
+        1.3L 4 cylinder\nPower: 97 PS\nTorque: 120 Nm\nTransmission: 5-speed manual or 4-speed automatic\nConsumption Fuel: 13-15 km/liter (in city) and 16-18 km/liter
+        (outside city)\nFeatures: AC, power window, power steering, audio system, ABS, airbag\n\n 2. Daihatsu Terios\nDaihatsu Terios is a 7-seater SUV (Sport Utility Vehicle)
+        which has a sporty and tough design. This car is suitable for families who want to have a car with reliable performance and is able to overcome various road
+        conditions.\nSpecifications:\nEngine: 1.5L 4 cylinder\nPower: 103 PS\nTorque: 136 Nm\nTransmission: 5-speed manual or 4-speed automatic -acceleration\nFuel consumption:
+        10-12 km/liter (in the city) and 13-15 km/liter (outside the city)\nFeatures: AC, power windows, power steering, audio system, ABS, airbags, electronic parking brake,
+        hill start assist\n\n 3. Daihatsu Ayla Type D MT\nDaihatsu Ayla Type D MT is a 5-seater LCGC (Low Cost Green Car) car which is famous for its low price and fuel economy.
+        This car is suitable for drivers who want to have a car at an affordable price and easy to drive.\nSpecifications:\nEngine: 1.0L 3 cylinder\nPower: 65 PS\nTorque:
+        86 Nm\nTransmission: 5-speed manual\nFuel consumption: 15-17 km/liter (in city) and 18-20 km/liter (outside city)\nFeatures: AC, power window, power steering, audio
+        system</string>
 
-    <string name="bagikan">Bagikan</string>
+    <string name="bagikan">Share</string>
+
+    <string name="input_error">------ INVALID INPUT! ------</string>
 
 </resources>
