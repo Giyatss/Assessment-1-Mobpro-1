@@ -3,6 +3,7 @@ package org.d3if3095.mobpro1_assessment1.ui.screen
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
@@ -14,18 +15,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Info
-import androidx.compose.material3.Button
-import androidx.compose.material3.Divider
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.RadioButton
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
@@ -78,7 +68,6 @@ fun MainScreen(navController: NavHostController){
     }
 }
 
-
 @Composable
 fun ScreenContent(modifier: Modifier) {
     var merek by rememberSaveable { mutableStateOf("") }
@@ -90,49 +79,68 @@ fun ScreenContent(modifier: Modifier) {
 
     var isInputValid by rememberSaveable { mutableStateOf(true) }
 
+    val brandOptions = listOf(
+        stringResource(id = R.string.toyota),
+        stringResource(id = R.string.daihatsu)
+    )
     val radioOptions = listOf(
         stringResource(id = R.string.mobil_manual),
         stringResource(id = R.string.mobil_matic)
     )
 
-    Column (
+    val context = LocalContext.current
+
+    Column(
         modifier = modifier
             .fillMaxSize()
             .verticalScroll(rememberScrollState())
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
         horizontalAlignment = Alignment.CenterHorizontally
-    ){
+    ) {
         Text(
             text = stringResource(id = R.string.app_intro),
             modifier = Modifier.fillMaxWidth()
         )
-        Text(
-            text = stringResource(id = R.string.pilihan_merek),
-            modifier = Modifier.fillMaxWidth(),
-            style = MaterialTheme.typography.bodySmall
-        )
-
-        OutlinedTextField(
-            value = merek,
-            onValueChange = { value ->
-                merek = value
-            },
-            label = { Text(text = stringResource(R.string.merek_mobil))},
-            singleLine = true,
-            modifier = Modifier.fillMaxWidth(),
-        )
-        Text(text = stringResource(id = R.string.pilih_tipe), style = MaterialTheme.typography.bodyLarge,
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(top = 20.dp))
-
 
         Row(
             modifier = Modifier
                 .padding(top = 6.dp)
                 .border(1.dp, Color.Gray, RoundedCornerShape(4.dp)),
-            verticalAlignment =  Alignment.CenterVertically
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            brandOptions.forEach { text ->
+                Row(
+                    modifier = Modifier
+                        .selectable(
+                            selected = merek == text,
+                            onClick = {
+                                merek = text
+                            },
+                            role = Role.RadioButton
+                        )
+                        .weight(1f)
+                        .padding(16.dp)
+                ) {
+                    RadioButton(selected = merek == text, onClick = null)
+                    Text(text = text)
+                }
+            }
+        }
+
+        Text(
+            text = stringResource(id = R.string.pilih_tipe),
+            style = MaterialTheme.typography.bodyLarge,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 20.dp)
+        )
+
+        Row(
+            modifier = Modifier
+                .padding(top = 6.dp)
+                .border(1.dp, Color.Gray, RoundedCornerShape(4.dp)),
+            verticalAlignment = Alignment.CenterVertically
         ) {
             radioOptions.forEach { text ->
                 Row(
@@ -155,13 +163,14 @@ fun ScreenContent(modifier: Modifier) {
 
         Button(
             onClick = {
-
                 isInputValid = true
 
-                if (merek.lowercase() != "toyota" && merek.lowercase() != "daihatsu") {
+                if (merek.isEmpty() || tipe.isEmpty()) {
                     isInputValid = false
-                }else if (merek.isEmpty() || tipe.isEmpty()) {
-                    isInputValid = false
+                    Toast.makeText(
+                        context, context.getString(R.string.toast_message),
+                        Toast.LENGTH_SHORT
+                    ).show()
                 } else {
                     Rekomendasi1 = (merek.lowercase() == "toyota" && tipe.lowercase() == "matic")
                     Rekomendasi2 = (merek.lowercase() == "toyota" && tipe.lowercase() == "manual")
@@ -180,8 +189,10 @@ fun ScreenContent(modifier: Modifier) {
         ) {
             Text(text = stringResource(R.string.lihat_rekomendasi))
         }
-        Text(text = stringResource(R.string.ket_rekomendasi),
-            style = MaterialTheme.typography.bodySmall)
+        Text(
+            text = stringResource(R.string.ket_rekomendasi),
+            style = MaterialTheme.typography.bodySmall
+        )
 
         if (!isInputValid) {
             Divider(Modifier.padding(vertical = 12.dp))
@@ -197,7 +208,7 @@ fun ScreenContent(modifier: Modifier) {
             Divider(Modifier.padding(vertical = 12.dp))
             ToyotaMatic()
         }
-        if (Rekomendasi2){
+        if (Rekomendasi2) {
             Divider(Modifier.padding(vertical = 12.dp))
             ToyotaManual()
         }
@@ -205,13 +216,13 @@ fun ScreenContent(modifier: Modifier) {
             Divider(Modifier.padding(vertical = 12.dp))
             DaihatsuMatic()
         }
-        if (Rekomendasi4){
+        if (Rekomendasi4) {
             Divider(Modifier.padding(vertical = 12.dp))
             DaihatsuManual()
         }
-
     }
 }
+
 private fun shareData(context: Context, massage: String) {
     val shareIntent = Intent(Intent.ACTION_SEND).apply {
         type = "text/plain"
@@ -380,4 +391,3 @@ fun ScreenPreview() {
         MainScreen(rememberNavController())
     }
 }
-

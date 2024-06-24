@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Rekomenedasi Mobil</string>
-    <string name="app_intro">Kami akan membantu mencarikan rekomendasi mobil untukmu.\n\nMasukkan merek mobil:</string>
+    <string name="app_intro">Kami akan membantu mencarikan rekomendasi mobil untukmu.\n\nPilih merek mobil:</string>
     <string name="pilihan_merek">*merek hanya Toyota dan Daihatsu</string>
     <string name="pilih_tipe">Pilih tipe mobil:</string>
     <string name="merek_mobil">Merek (Toyota atau Daihatsu)</string>
@@ -9,6 +9,9 @@
     <string name="mobil_matic">Matic</string>
     <string name="lihat_rekomendasi">Lihat Rekomendasi</string>
     <string name="ket_rekomendasi">Hasil rekomendasi akan muncul di bawah</string>
+    <string name="toyota">Toyota</string>
+    <string name="daihatsu">Daihatsu</string>
+    <string name="toast_message">Harap pilih semua inputan!</string>
 
     <string name="tentang_aplikasi">Tentang Aplikasi</string>
     <string name="copyright">Aplikasi ini dibuat untuk memudahkan pengguna yang sedang mencari rekomendasi mobil. Aplikasi akan menampilkan beberapa rekomendasi mobil yang relevan merdasarkan inputan merek dan tipe mobil (manual atau matic) yang telah dimasukkan olehpengguna.\n\nCopyright © 2024 Giyats Almanfalutti.\nAll rights reserved.</string>
